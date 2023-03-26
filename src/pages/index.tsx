@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { EnvelopeAtFill, Github, Linkedin, Medium } from "react-bootstrap-icons";
 import './styles.scss'
 
 const pageStyles = {
@@ -141,9 +142,38 @@ const links = [
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <Container className="p-3">
-      <Container className="p-5 mb-4 rounded-3">
-        <h1 className="header">Supayut Raksuk</h1>
+    <Container className="p-3 fill">
+      <Container className="p-5 mb-4">
+        <h1 className="display-1 container-header">Supayut Raksuk</h1>
+        <div className="main-info">
+          <div className="about-me-info rounded">
+            <h2 className="">
+              #About Me
+            </h2>
+            <h4>
+              I'm a Software Engineer living in Bangkok, Thailand.
+            </h4>
+          </div>
+          <div className="contact-info rounded">
+            <h2 className="">
+              Contact
+            </h2>
+            <ul>
+              <li>
+                <a href="mailto:nookskill@hotmail.com"><EnvelopeAtFill/>{` `}Email</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/supayut-raksuk" target="_blank"><Linkedin/>{` `}Linkedin</a>
+              </li>
+              <li>
+                <a href="https://medium.com/@nookskill" target="_blank"><Medium/>{` `}Medium</a>
+              </li>
+              <li>
+                <a href="https://github.com/supayut" target="_blank"><Github/>{` `}Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </Container>
       {/* <main style={pageStyles}>
         <h1 style={headingStyles}>
