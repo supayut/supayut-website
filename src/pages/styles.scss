@@ -23,7 +23,7 @@ html, body {
 
   .container-header {
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    background-color: $primary-color-purple;
+    background-color: rgba($primary-color, .3);
     border-radius: 8px;
     margin-bottom: 3rem;
   }
@@ -33,6 +33,10 @@ html, body {
     background-color: $primary-color-purple;
     min-height: 100%;
     height: auto;
+  }
+
+  .base-shadow {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
   }
 
   a {

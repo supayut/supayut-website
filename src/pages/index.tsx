@@ -146,7 +146,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Container className="p-5 mb-4">
         <h1 className="display-1 container-header">Supayut Raksuk</h1>
         <div className="main-info">
-          <div className="about-me-info rounded">
+          <div className="about-me-info rounded base-shadow">
             <h2 className="">
               #About Me
             </h2>
@@ -154,7 +154,7 @@ const IndexPage: React.FC<PageProps> = () => {
               I'm a Software Engineer living in Bangkok, Thailand.
             </h4>
           </div>
-          <div className="contact-info rounded">
+          <div className="contact-info rounded base-shadow">
             <h2 className="">
               Contact
             </h2>
