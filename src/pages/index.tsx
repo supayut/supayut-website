@@ -151,7 +151,7 @@ const IndexPage: React.FC<PageProps> = () => {
               #About Me
             </h2>
             <h4>
-              I'm a Software Engineer living in Bangkok, Thailand.
+              I'm a <span className="color-mint">Software Engineer</span> living in Bangkok, Thailand.
             </h4>
           </div>
           <div className="contact-info rounded base-shadow">

@@ -4,14 +4,23 @@
 
 // $font-stack: Helvetica, sans-serif;
 $primary-color: #03001C;
+$primary-color-white: #fff;
 $primary-color-purple: #301E67;
 $primary-color-mint: #B6EADA;
 $primary-color-sea: #5B8FB9;
 
+.color-sea {
+  color: $primary-color-sea;
+}
+
+.color-mint {
+  color: $primary-color-mint;
+}
+
 html, body {
   height: 100%;
   background-color: $primary-color-mint;
-  color: $primary-color-mint;
+  color: $primary-color-white;
 
   #___gatsby {
     height: 100%;
@@ -26,6 +35,7 @@ html, body {
     background-color: rgba($primary-color, .3);
     border-radius: 8px;
     margin-bottom: 3rem;
+    padding: 1rem;
   }
 
   .fill {
@@ -40,19 +50,19 @@ html, body {
   }
 
   a {
-    color: $primary-color-mint;
+    color: $primary-color-white;
     text-decoration: unset;
   }
 
   a:hover {
-    color: rgba($primary-color-mint, .5);
+    color: rgba($primary-color-white, .5);
   }
 
   .main-info {
     .about-me-info {
       background-color: rgba($primary-color, .3);
       padding: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
     }
 
     .contact-info {
@@ -69,8 +79,9 @@ html, body {
 
   @include media-breakpoint-up(lg) {
     .main-info {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
 
       .about-me-info {
         background-color: rgba($primary-color, .3);
