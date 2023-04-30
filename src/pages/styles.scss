@@ -62,7 +62,10 @@ html, body {
     .about-me-info {
       background-color: rgba($primary-color, .3);
       padding: 1rem;
-      margin-bottom: 3rem;
+
+      .article {
+        margin-top: 3rem;
+      }
     }
 
     .contact-info {
