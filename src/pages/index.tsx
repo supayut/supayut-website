@@ -43,7 +43,7 @@ const listItemStyles = {
 }
 
 const linkStyle = {
-  color: "#8954A8",
+  color: "#B6EADA",
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
@@ -144,15 +144,29 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <Container className="p-3 fill">
       <Container className="p-5 mb-4">
-        <h1 className="display-1 container-header">Supayut Raksuk</h1>
+        <h1 className="display-1 container-header">Supayut | Nookskill</h1>
         <div className="main-info">
           <div className="about-me-info rounded base-shadow">
             <h2 className="">
-              #About Me
+              Hi, my name is <span className="color-mint">Nook</span>
             </h2>
             <h4>
               I'm a <span className="color-mint">Software Engineer</span> living in Bangkok, Thailand.
             </h4>
+            <div className="article">
+              <h4>
+                Hobbies
+              </h4>
+              <p>
+              <a
+                style={linkStyle}
+                href={`https://invest.supayut.com/`}
+              >
+                Noob Trader (Stock Trading Tools for Thailand's SET)
+              </a>
+
+              </p>
+            </div>
           </div>
           <div className="contact-info rounded base-shadow">
             <h2 className="">
