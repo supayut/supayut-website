@@ -1,15 +1,17 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import Container from 'react-bootstrap/Container'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { EnvelopeAtFill, Github, Linkedin, Medium } from "react-bootstrap-icons";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles.scss'
+import ContactInfo from "../components/ContactInfo"
+import Article from "../components/Article"
 
 const pageStyles = {
   color: "#232129",
 
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
+
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
@@ -18,9 +20,11 @@ const headingStyles = {
 const headingAccentStyles = {
   color: "#663399",
 }
+
 const paragraphStyles = {
   marginBottom: 48,
 }
+
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
@@ -28,13 +32,16 @@ const codeStyles = {
   fontSize: "1.25rem",
   borderRadius: 4,
 }
+
 const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 }
+
 const doclistStyles = {
   paddingLeft: 0,
 }
+
 const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
@@ -157,35 +164,17 @@ const IndexPage: React.FC<PageProps> = () => {
               <h4>
                 Hobbies
               </h4>
-              <p>
-              <a
-                style={linkStyle}
-                href={`https://invest.supayut.com/`}
-              >
-                Noob Trader (Stock Trading Tools for Thailand's SET)
-              </a>
-
-              </p>
+                <a
+                  style={linkStyle}
+                  href={`https://invest.supayut.com/`}
+                >
+                  Noob Trader (Stock Trading Tools for Thailand's SET)
+                </a>
             </div>
+            <Article />
           </div>
-          <div className="contact-info rounded base-shadow">
-            <h2 className="">
-              Contact
-            </h2>
-            <ul>
-              <li>
-                <a href="mailto:nookskill@hotmail.com"><EnvelopeAtFill/>{` `}Email</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/supayut-raksuk" target="_blank"><Linkedin/>{` `}Linkedin</a>
-              </li>
-              <li>
-                <a href="https://medium.com/@nookskill" target="_blank"><Medium/>{` `}Medium</a>
-              </li>
-              <li>
-                <a href="https://github.com/supayut" target="_blank"><Github/>{` `}Github</a>
-              </li>
-            </ul>
+          <div className="contact">
+            <ContactInfo />
           </div>
         </div>
       </Container>
