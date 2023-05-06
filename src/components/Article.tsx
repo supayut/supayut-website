@@ -1,4 +1,5 @@
 import * as React from "react"
+import { LinkProps } from "./type"
 
 const listStyles = {
   marginBottom: '4rem',
@@ -12,7 +13,7 @@ const listItemStyles = {
 }
 
 const linkStyle = {
-  color: "#B6EADA",
+  color: "#8BC34A",
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
@@ -42,7 +43,7 @@ const descriptionStyle = {
   lineHeight: 1.25,
 }
 
-const links = [
+const links: LinkProps[] = [
   {
     text: "มาติดตั้ง/ต่ออายุ(อัตโนมัติ) SSL (https) ของ Let’s encrypt free https กันดีกว่า",
     url: "https://medium.com/c0d1um/มาติดตั้ง-ต่ออายุ-ssl-https-ของ-lets-encrypt-free-https-กันดีกว่า-75b44a6526b7",
@@ -80,7 +81,7 @@ export default function Article() {
   return (
     <div className="article">
       <h4>
-        Articles
+        <span className="gradient-mint">Articles</span>
       </h4>
       <ul style={listStyles}>
         {links.map(link => (
@@ -88,7 +89,7 @@ export default function Article() {
             <span>
               <a
                 style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
+                href={`${link.url}`}
               >
                 {link.text}
               </a>
