@@ -6,7 +6,7 @@ export default function ContactInfo() {
   return (
     <div className="contact-info rounded base-shadow">
       <h2 className="">
-        Contact
+        <span className="gradient-mint">Contact</span>
       </h2>
       <ul>
         <li>

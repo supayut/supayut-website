@@ -7,7 +7,10 @@ $primary-color: #03001C;
 $primary-color-white: #fff;
 $primary-color-purple: #301E67;
 $primary-color-mint: #B6EADA;
+$primary-color-light-green: #8BC34A;
 $primary-color-sea: #5B8FB9;
+$primary-color-custard: #FDD835;
+$primary-color-pink: #FF33FF;
 
 .color-sea {
   color: $primary-color-sea;
@@ -15,6 +18,32 @@ $primary-color-sea: #5B8FB9;
 
 .color-mint {
   color: $primary-color-mint;
+}
+
+.color-custard {
+  color: $primary-color-custard;
+}
+
+.color-pink {
+  color: $primary-color-pink;
+}
+
+.gradient-mint {
+  background: linear-gradient(90deg, $primary-color-mint 0%, $primary-color-sea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-custard {
+  background: linear-gradient(90deg, $primary-color-custard 0%, $primary-color-pink 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-custard-reverse {
+  background: linear-gradient(90deg, $primary-color-pink 0%, $primary-color-custard 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 html, body {
@@ -34,7 +63,6 @@ html, body {
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     background-color: rgba($primary-color, .3);
     border-radius: 8px;
-    margin-bottom: 3rem;
     padding: 1rem;
   }
 
@@ -58,8 +86,15 @@ html, body {
     color: rgba($primary-color-white, .5);
   }
 
+  .base-content {
+    padding: 1rem 1rem 3rem;
+  }
+
   .main-info {
+    display: flex;
+    flex-direction: column-reverse;
     .about-me-info {
+      margin-top: 3rem;
       background-color: rgba($primary-color, .3);
       padding: 1rem;
 
@@ -69,6 +104,7 @@ html, body {
     }
 
     .contact-info {
+      margin-top: 3rem;
       background-color: rgba($primary-color, .3);
       padding: 1rem;
 
@@ -81,6 +117,10 @@ html, body {
   }
 
   @include media-breakpoint-up(lg) {
+    .base-content {
+      padding: 3rem;
+    }
+
     .main-info {
       display: grid;
       grid-template-columns: 1fr auto;
