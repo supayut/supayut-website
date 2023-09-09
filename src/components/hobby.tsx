@@ -50,6 +50,12 @@ const links: LinkProps[] = [
     description: "This project is designed to provide stock traders in Thailand's SET market with a suite of tools to help them make more informed trading decisions.",
     color: "#E95800",
   },
+  {
+    text: "Financial Overview Table (TradingView Pine Script)",
+    url: "https://www.tradingview.com/script/vjQPdZuM-Financial-Overview-Table/",
+    description: "This script displays quarterly Revenue, Net Income, Gross Profit, EPS data, and their year-on-year percentage change.",
+    color: "#3acf82",
+  },
 ]
 
 export default function Hobby() {
