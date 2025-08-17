@@ -10,15 +10,14 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Supayut Website`,
         short_name: `Supayut`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
+        background_color: `#0f0f23`,
+        theme_color: `#00d4ff`,
         display: `standalone`,
         icon: `src/images/favicon/favicon-32x32.png`,
       },

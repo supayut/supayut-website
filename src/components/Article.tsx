@@ -64,44 +64,36 @@ const links: LinkProps[] = [
     url: "https://medium.com/c0d1um/editorconfig-คืออะไร-แล้วทำไมเราต้องใช้มันล่ะ-developer-ควรรู้จักนะ-c4551f2541da",
     color: "#0D96F2",
   },
-  // {
-  //   text: "Plugin Library",
-  //   url: "https://www.gatsbyjs.com/plugins",
-  //   color: "#8EB814",
-  // },
-  // {
-  //   text: "Build and Host",
-  //   url: "https://www.gatsbyjs.com/cloud",
-  //   badge: true,
-  //   color: "#663399",
-  // },
 ]
 
 export default function Article() {
   return (
-    <div className="article">
+    <div className="article-section">
       <h4>
-        <span className="gradient-mint">Articles</span>
+        <span className="gradient-blue-pink">Articles</span> 📝
       </h4>
-      <ul style={listStyles}>
+      <div className="article-grid">
         {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
+          <div key={link.url} className="article-card glass">
+            <div className="article-header">
               <a
-                style={linkStyle}
                 href={`${link.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="article-link"
+                style={{ color: link.color }}
               >
                 {link.text}
               </a>
               {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
+                <span className="article-badge">
+                  NEW! ✨
                 </span>
               )}
-            </span>
-          </li>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
